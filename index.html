@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  Bill
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="user-row">
+        <p>Bill</p>
+        <input type="text" placeholder="$" class="form-control w-100 user-input" />
+        <div class="tip-section mt-3">
+          <p>Select Tip %</p>
+          <div class="button-group gap-2 main-tip">
+            <button type="button" class="btn btn-lg tip-button">5%</button>
+            <button type="button" class="btn btn-lg tip-button">10%</button>
+            <button type="button" class="btn btn-lg tip-button">15%</button>
+          </div>
+          <div class="button-group gap-2 main-tip mt-3">
+            <button type="button" class="btn btn-lg tip-button">25%</button>
+            <button type="button" class="btn btn-lg tip-button">50%</button>
+            <input type="text" placeholder="custom" class="tip-input" />
+          </div>
+        </div>
 
-  Number of People
+        <div class="people-count mt-3">
+          <p>Number of People</p>
+          <input type="text" class="form-control w-100 user-input" />
+        </div>
+      </div>
+      <div class="checkout-row">
+        <div class="amount">
+          <div class="cash-out">
+            <p>Tip Amount<br /><span>/ person</span></p>
+            <p>$ 0.00</p>
+          </div>
+          <div class="cash-out">
+            <p>Total <br /><span>/ person</span></p>
+            <p>$ 0.00</p>
+          </div>
+        </div>
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <button type="button" disabled class="btn reset-button w-100 btn-lg">Reset</button>
+      </div>
+    </div>
+    <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Delish Khadka</a>.</div> -->
+  </body>
 </html>
