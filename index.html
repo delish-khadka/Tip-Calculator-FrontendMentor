@@ -14,24 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
     <div class="main-container">
       <div class="user-row">
-        <p>Bill</p>
-        <input type="text" placeholder="$" class="form-control w-100 user-input" />
-        <div class="tip-section mt-3">
+        <div class="people-count">
+          <p>Bill</p>
+          <input type="text" placeholder="$" aria-label="yo" class="form-control-lg w-100 user-input" />
+        </div>
+
+        <div class="tip-section mt-4">
           <p>Select Tip %</p>
           <div class="button-group gap-2 main-tip">
             <button type="button" class="btn btn-lg tip-button">5%</button>
@@ -41,28 +34,29 @@
           <div class="button-group gap-2 main-tip mt-3">
             <button type="button" class="btn btn-lg tip-button">25%</button>
             <button type="button" class="btn btn-lg tip-button">50%</button>
-            <input type="text" placeholder="custom" class="tip-input" />
+            <input type="text" placeholder="Custom" class="tip-input" />
           </div>
         </div>
 
-        <div class="people-count mt-3">
+        <div class="people-count mt-4">
           <p>Number of People</p>
-          <input type="text" class="form-control w-100 user-input" />
+          <input type="text" class="form-control-lg w-100 user-input" />
         </div>
       </div>
+
       <div class="checkout-row">
         <div class="amount">
           <div class="cash-out">
-            <p>Tip Amount<br /><span>/ person</span></p>
-            <p>$ 0.00</p>
+            <p>Tip Amount<br /><span class="price-divided">/ person</span></p>
+            <p class="price">$ 0.00</p>
           </div>
           <div class="cash-out">
-            <p>Total <br /><span>/ person</span></p>
-            <p>$ 0.00</p>
+            <p>Total <br /><span class="price-divided">/ person</span></p>
+            <p class="price">$ 0.00</p>
           </div>
         </div>
 
-        <button type="button" disabled class="btn reset-button w-100 btn-lg">Reset</button>
+        <button type="button" disabled class="btn reset-button w-100 btn-lg">RESET</button>
       </div>
     </div>
     <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Delish Khadka</a>.</div> -->

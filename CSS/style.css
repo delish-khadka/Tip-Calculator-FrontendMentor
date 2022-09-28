@@ -6,23 +6,75 @@ body {
 }
 
 .main-container {
-  background-color: #fff;
+  background-color: hsl(189, 41%, 97%);
   border-radius: 20px;
   display: flex;
   flex-direction: row;
-  margin: 12% 15% 2%;
+  margin: 7% 15%;
   padding: 2rem;
-  /*
-  display: inline-block;
-  margin: 0 auto; */
 }
 
+/* user row */
 .user-row {
   width: 50%;
   vertical-align: middle;
   padding: 0 2rem 0 0;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
 }
 
+.people-count p {
+  margin-bottom: 7px;
+}
+
+.main-tip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-button {
+  width: 30%;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  font-weight: 700;
+}
+
+.tip-input {
+  position: none;
+  width: 30%;
+  padding: 0.6rem 1rem 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(59, 100%, 50%);
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.user-input {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: hsl(185, 41%, 84%);
+  text-align: right;
+  border: none;
+}
+
+.tip-input::placeholder {
+  color: hsl(186, 14%, 43%);
+  font-weight: bold;
+}
+
+/* .user-input:empty::after {
+  background-color: red;
+}
+
+.user-input::after {
+  background-color: purple;
+} */
+
+/* checkout row */
 .checkout-row {
   border-radius: 20px;
   background-color: hsl(183, 100%, 15%);
@@ -36,38 +88,42 @@ body {
   color: hsl(189, 41%, 97%);
 }
 
-.main-tip {
-  display: flex;
-  justify-content: space-between;
+.reset-button {
+  font-weight: 700;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  margin-top: 8rem;
 }
 
-.tip-input {
-  position: none;
-  width: 30%;
-  padding: 0.6rem 1rem 0.5rem;
-  font-size: 1.25rem;
+.price {
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.price-divided {
+  font-size: 0.8rem;
   font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  background-color: hsl(183, 100%, 15%);
-  color: hsl(59, 100%, 50%);
-  border: none;
-  border-radius: 0.25rem;
+  color: hsl(185, 41%, 84%);
 }
 
-.tip-button {
-  width: 30%;
-  background-color: hsl(183, 100%, 15%);
-  color: hsl(189, 41%, 97%);
+.cash-out p {
   font-weight: 700;
 }
 
-.reset-button {
-  background-color: hsl(172, 67%, 45%);
-  color: hsl(183, 100%, 15%);
-  margin-top: 10rem;
+::placeholder {
+  color: red; /*hsl(186, 14%, 43%); */
+  opacity: 1;
 }
 
-.user-input {
-  background-color: hsl(189, 41%, 97%);
+/* footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* mobile */
