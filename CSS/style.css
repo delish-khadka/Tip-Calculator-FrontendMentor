@@ -127,3 +127,24 @@ body {
 }
 
 /* mobile */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+    margin: 10% 0% 0%;
+  }
+
+  .user-row {
+    width: 100%;
+    padding: 0;
+  }
+
+  .user-input .people-count {
+    width: 100%;
+  }
+
+  .checkout-row {
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
