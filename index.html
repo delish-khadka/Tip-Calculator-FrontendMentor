@@ -6,6 +6,7 @@
     <!-- displays site properly based on user's device -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 
@@ -17,48 +18,53 @@
   </head>
 
   <body>
+    <!-- main container -->
     <div class="main-container">
-      <div class="user-row">
-        <div class="people-count">
+      <!-- input column for price tip and number of people -->
+      <div class="user-input-column">
+        <!-- input for price -->
+        <div class="label-input-class">
           <p>Bill</p>
-          <input type="text" placeholder="$" aria-label="yo" class="form-control-lg w-100 user-input" />
+          <input type="text" placeholder="0" aria-label="yo" class="form-control-lg w-100 user-input" />
+          <!-- placeholder section -->
+          <span class="permanent-placeholder">$</span>
         </div>
-
-        <div class="tip-section mt-4">
+        <!-- button for tips -->
+        <div class="tip-section">
           <p>Select Tip %</p>
-          <!-- <div class="row">
-            <div class="col-lg-4 col-md-6"></div>
-          </div> -->
-          <div class="button-group gap-2 main-tip">
+          <div class="button-group gap-2 tip-button-group">
             <button type="button" class="btn btn-lg tip-button">5%</button>
             <button type="button" class="btn btn-lg tip-button">10%</button>
             <button type="button" class="btn btn-lg tip-button">15%</button>
-          </div>
-          <div class="button-group gap-2 main-tip mt-3">
             <button type="button" class="btn btn-lg tip-button">25%</button>
             <button type="button" class="btn btn-lg tip-button">50%</button>
             <input type="text" placeholder="Custom" class="tip-input" />
           </div>
         </div>
-
-        <div class="people-count mt-4">
+        <!-- input for people count -->
+        <div class="label-input-class mt-4">
           <p>Number of People</p>
-          <input type="text" class="form-control-lg w-100 user-input" />
+          <input type="text" placeholder="0" class="form-control-lg w-100 user-input" />
+          <!-- placeholder section -->
+          <span class="permanent-placeholder"><i class="bi bi-person-fill"></i></span>
         </div>
       </div>
 
-      <div class="checkout-row">
-        <div class="amount">
-          <div class="cash-out">
-            <p>Tip Amount<br /><span class="price-divided">/ person</span></p>
+      <!-- checkout section -->
+      <div class="price-checkout-column">
+        <!-- container class for calculation of tip and price per person -->
+        <div class="tip-and-total-price">
+          <!-- price for tip amount and person -->
+          <div class="price-section">
+            <p>Tip amount<br /><span class="small-text">/ person</span></p>
             <p class="price">$ 0.00</p>
           </div>
-          <div class="cash-out">
-            <p>Total <br /><span class="price-divided">/ person</span></p>
+          <div class="price-section">
+            <p>Total <br /><span class="small-text">/ person</span></p>
             <p class="price">$ 0.00</p>
           </div>
         </div>
-
+        <!-- reset button -->
         <button type="button" disabled class="btn reset-button w-100 btn-lg">RESET</button>
       </div>
     </div>
