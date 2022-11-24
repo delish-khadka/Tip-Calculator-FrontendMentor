@@ -130,6 +130,15 @@ body {
   margin-top: 8rem;
 }
 
+.reset-button:hover {
+  outline: none;
+  color: none;
+}
+
+.reset-button:focus {
+  box-shadow: none;
+}
+
 /* footer */
 
 .attribution {
