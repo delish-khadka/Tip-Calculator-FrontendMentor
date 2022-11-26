@@ -3,6 +3,10 @@ body {
   padding: 0;
   background-color: hsl(185, 41%, 84%);
   font-family: "Space Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* main container class */
@@ -10,13 +14,10 @@ body {
   background-color: hsl(189, 41%, 97%);
   border-radius: 20px;
   display: flex;
-  align-items: space-between;
-  /* flex-direction: row; */
-  margin: 7% 15%;
+  width: 70rem;
   padding: 2rem;
 }
 
-/* input column*/
 .user-input-column {
   width: 50%;
   vertical-align: middle;
@@ -25,12 +26,10 @@ body {
   color: hsl(186, 14%, 43%);
 }
 
-/* label for input */
 .label-input-class p {
   margin-bottom: 7px;
 }
 
-/* input field */
 .user-input {
   font-size: 24px;
   background-color: hsl(185, 41%, 84%);
@@ -44,7 +43,6 @@ body {
   font-weight: 700;
 }
 
-/* button group */
 .tip-button-group {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -64,7 +62,6 @@ body {
   background-color: hsl(185, 41%, 84%);
 }
 
-/* input for tip */
 .tip-input {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -76,13 +73,11 @@ body {
   border-radius: 0.25rem;
 }
 
-/* placeholder */
 .tip-input::placeholder {
   color: hsl(186, 14%, 43%);
   font-weight: bold;
 }
 
-/* placeholder positioning */
 .permanent-placeholder {
   position: relative;
   bottom: 40px;
@@ -90,8 +85,6 @@ body {
   font-size: 20px;
 }
 
-/**********************************************************************************************/
-/* checkout section */
 .price-checkout-column {
   border-radius: 20px;
   background-color: hsl(183, 100%, 15%);
@@ -111,7 +104,6 @@ body {
   color: hsl(185, 41%, 84%);
 }
 
-/* price section */
 .price-section {
   display: flex;
   justify-content: space-between;
@@ -123,7 +115,6 @@ body {
   font-size: 2.5rem;
 }
 
-/* reset button */
 .reset-button {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
@@ -138,8 +129,6 @@ body {
 .reset-button:focus {
   box-shadow: none;
 }
-
-/* footer */
 
 .attribution {
   font-size: 11px;
@@ -160,7 +149,7 @@ body {
 }
 
 /* mobile */
-@media (max-width: 761px) {
+@media (max-width: 1100px) {
   .main-container {
     flex-direction: column;
     width: 100%;

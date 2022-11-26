@@ -10,17 +10,30 @@ const buttons = document.querySelectorAll("#tip-buttons");
 // console.log(customTipPercentage);
 
 //Calculate Tip When Click On Tip Percentage Button
-buttons.forEach((button) => {
+buttons.forEach(tipOnButtonClick);
+function tipOnButtonClick(button) {
   button.addEventListener("click", (e) => {
     let tipvalue = e.target.innerText;
     tipvalue = tipvalue.substr(0, tipvalue.length - 1);
+    // console.log(tipvalue);
 
     if (billAmount.value === "") return;
     if (numberOfPeople.value === "") numberOfPeople.value = 1;
 
     calculateTip(parseFloat(billAmount.value), parseInt(tipvalue), parseInt(numberOfPeople.value));
   });
-});
+}
+// buttons.forEach((button) => {
+// button.addEventListener("click", (e) => {
+//   let tipvalue = e.target.innerText;
+//   tipvalue = tipvalue.substr(0, tipvalue.length - 1);
+
+//   if (billAmount.value === "") return;
+//   if (numberOfPeople.value === "") numberOfPeople.value = 1;
+
+//   calculateTip(parseFloat(billAmount.value), parseInt(tipvalue), parseInt(numberOfPeople.value));
+// });
+// });
 
 //Calculate Tip When User Give Custom Tip Percentage Input
 customTipPercentage.addEventListener("input", (e) => {

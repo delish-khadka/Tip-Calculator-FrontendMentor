@@ -19,56 +19,52 @@
 
   <body>
     <!-- main container -->
-    <div class="main-container">
-      <!-- input column for price tip and number of people -->
-      <div class="user-input-column">
-        <!-- input for price -->
-        <div class="label-input-class">
-          <p>Bill</p>
-          <input type="text" placeholder="0" id="bill-input" aria-label="yo" class="form-control-lg w-100 user-input" />
-          <!-- placeholder section -->
-          <span class="permanent-placeholder">$</span>
-        </div>
-        <!-- button for tips -->
-        <div class="tip-section">
-          <p>Select Tip %</p>
-          <div class="button-group gap-2 tip-button-group">
-            <button type="button" id="tip-buttons" class="btn btn-lg tip-button">5%</button>
-            <button type="button" id="tip-buttons" class="btn btn-lg tip-button">10%</button>
-            <button type="button" id="tip-buttons" class="btn btn-lg tip-button">15%</button>
-            <button type="button" id="tip-buttons" class="btn btn-lg tip-button">25%</button>
-            <button type="button" id="tip-buttons" class="btn btn-lg tip-button">50%</button>
-            <input type="text" placeholder="Custom" class="tip-input" />
-          </div>
-        </div>
-        <!-- input for people count -->
-        <div class="label-input-class mt-4">
-          <p>Number of People</p>
-          <input type="text" placeholder="0" id="number-of-people" class="form-control-lg w-100 user-input" />
-          <!-- placeholder section -->
-          <span class="permanent-placeholder"><i class="bi bi-person-fill"></i></span>
-        </div>
-      </div>
 
-      <!-- checkout section -->
-      <div class="price-checkout-column">
-        <!-- container class for calculation of tip and price per person -->
-        <div class="tip-and-total-price">
-          <!-- price for tip amount and person -->
-          <div class="price-section">
-            <p>Tip amount<br /><span class="small-text">/ person</span></p>
-            <p class="price" id="tip-amount">$0.00</p>
+    <main>
+      <div class="main-container">
+        <!-- input column for price tip and number of people -->
+        <div class="user-input-column">
+          <div class="label-input-class">
+            <p>Bill</p>
+            <input type="text" placeholder="0" id="bill-input" aria-label="yo" class="form-control-lg w-100 user-input" />
+            <span class="permanent-placeholder">$</span>
           </div>
-          <div class="price-section">
-            <p>Total <br /><span class="small-text">/ person</span></p>
-            <p class="price" id="total-amount">$0.00</p>
+          <div class="tip-section">
+            <p>Select Tip %</p>
+            <div class="button-group gap-2 tip-button-group">
+              <button type="button" id="tip-buttons" class="btn btn-lg tip-button">5%</button>
+              <button type="button" id="tip-buttons" class="btn btn-lg tip-button">10%</button>
+              <button type="button" id="tip-buttons" class="btn btn-lg tip-button">15%</button>
+              <button type="button" id="tip-buttons" class="btn btn-lg tip-button">25%</button>
+              <button type="button" id="tip-buttons" class="btn btn-lg tip-button">50%</button>
+              <input type="text" placeholder="Custom" class="tip-input" />
+            </div>
+          </div>
+          <div class="label-input-class mt-4">
+            <p>Number of People</p>
+            <input type="text" placeholder="0" id="number-of-people" class="form-control-lg w-100 user-input" />
+            <span class="permanent-placeholder"><i class="bi bi-person-fill"></i></span>
           </div>
         </div>
-        <!-- reset button -->
-        <button type="button" id="reset-button" class="btn reset-button w-100 btn-lg">RESET</button>
+
+        <!-- checkout section -->
+        <div class="price-checkout-column">
+          <div class="tip-and-total-price">
+            <div class="price-section">
+              <p>Tip amount<br /><span class="small-text">/ person</span></p>
+              <p class="price" id="tip-amount">$0.00</p>
+            </div>
+            <div class="price-section">
+              <p>Total <br /><span class="small-text">/ person</span></p>
+              <p class="price" id="total-amount">$0.00</p>
+            </div>
+          </div>
+          <!-- reset button -->
+          <button type="button" id="reset-button" class="btn reset-button w-100 btn-lg">RESET</button>
+        </div>
       </div>
-    </div>
-    <script src="JS/script.js"></script>
-    <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Delish Khadka</a>.</div> -->
+      <script src="JS/script.js"></script>
+      <div class="attribution mt-2">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Delish Khadka</a>.</div>
+    </main>
   </body>
 </html>
